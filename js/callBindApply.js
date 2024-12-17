@@ -40,7 +40,7 @@ Function.prototype.myCall = function(obj, ...args){
 
 
 
-//--------------------- APPLY ---------------------------------
+//--------------------- APPLY --------------------------------
 
 // console.log("------ APPLY -------");
 // intro.apply(person1, ["bhagalpur", "bihar"]);
