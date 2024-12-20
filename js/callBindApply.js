@@ -1,3 +1,7 @@
+// why call, apply and bind is used?
+// call, apply and bind is use to share methods
+// i.e by using call, apply and bind, we can change the obj, this keyword referce to
+
 console.log("Call Bind Apply");
 
 const person1 = {
