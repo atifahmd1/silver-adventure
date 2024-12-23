@@ -69,4 +69,27 @@ res = arr.myReduce((acc, curr)=>{
 
 console.log("myReduce res: ", res);
 
+console.log("----------------- Array Flat Method -----------------");
+
+const arr2 = [1,2,3,4, [5,6,7, [8,9,10]]];
+console.log("flat eg.: ", arr2.flat(2));
+
+
+Array.prototype.myFlat = function(depth=1) {
+    const res = [];
+    console.log(this);
+
+    this.forEach((el)=>{
+        if(Array.isArray(el) && depth > 0) {
+
+            res.push(...el.myFlat(depth-1));
+        }
+        else{
+            res.push(el);
+        }
+    })
+    return res;
+}
+console.log("myFlat res: ", arr2.myFlat(2));
+
 
